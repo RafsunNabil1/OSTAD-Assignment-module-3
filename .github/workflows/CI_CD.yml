@@ -23,15 +23,13 @@ jobs:
       run: npm install
     
     - name: Run test & store log
-      run: |
-        
-        npm run check > results.txt || echo "TEST FAILD"
+      run: npm run check > results.txt || echo "TEST FAILD"
 
     - name: upload test results
       uses: actions/upload-artifact@v4
       with:
         name: test-results
-        path: test-results/results.txt
+        path: results.txt
 
  #deploy
 
@@ -81,7 +79,7 @@ jobs:
     #     working-directory: ./OstadUI
     #     run: |
     #       echo "npm run test "
-
+s
 
     #   - name: Build Docker container
     #     run: docker build -f Dockerfile-UI -t ostadui .

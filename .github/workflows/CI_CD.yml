@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: ostad1
+    runs-on: self-hosted
 
     steps: 
     - name: Code checkout

@@ -79,7 +79,6 @@ jobs:
     #     working-directory: ./OstadUI
     #     run: |
     #       echo "npm run test "
-s
 
     #   - name: Build Docker container
     #     run: docker build -f Dockerfile-UI -t ostadui .
